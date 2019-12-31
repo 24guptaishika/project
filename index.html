@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="" ng-app>
+<head>
+<title>End Hunger</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="framework.css" rel="stylesheet" type="text/css" media="all">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#heading1").click(function(){
+$("#panel").slideToggle();
+});
+});
+</script>
+<script>
+function validate(){
+var form1= document.getElementById("myform");
+var name1= form1.name1.value;
+var email1=form1.email1.value;
+if(name1==""||email1=="")
+{
+  alert('enter both fields');
+  return false;
+}
+var atpos = email1.indexOf("@");     
+var dotpos = email1.lastIndexOf(".");     
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email1.length)
+  {     
+    alert('Not a valid e-mail address');  
+    return false;   
+  }     
+}
+</script>
+<style>
+  #panel{
+    padding:100px;
+    display:none;
+    text-align:center;
+  }
+</style>
+</head>
+<body id="top">
+
+<div class="bgded overlay padtop" style="background-image:url('1.jpg');"> 
+  <header id="header" class="hoc clear">
+    <div id="logo" class="fl_left"> 
+      <h1 id="heading1">End Hunger</h1>
+    </div>
+    <div id="panel">
+      World hunger has been a constant problem throughout the ages.  It is a problem that should be able to be solved easily, yet there are still 1.02 billion undernourished people worldwide.  With the world population being 6.7 billion people, and the Earth producing more than enough food for this amount of people, why is it that there are hungry, malnourished people all around the globe?
+    </div>
+  </header>
+  <div id="pageintro" class="hoc clear"> 
+    <article>
+      <h3 class="heading">End Hunger!</h3>
+      <p>Millions of families in India go hungry every year. Help us provide them with enough to eat</p>
+    </article>
+  </div>
+</div>
+
+<div class="wrapper row1">
+  <section id="ctdetails" class="hoc clear"> 
+    <ul class="nospace clear">
+      <li class="one_quarter first">
+        <div class="block clear"><a href="#"><i class="fas fa-phone"></i></a> <span><strong>Give us a call:</strong> +00 (123) 456 7890</span></div>
+      </li>
+      <li class="one_quarter">
+        <div class="block clear"><a href="#"><i class="fas fa-envelope"></i></a> <span><strong>Send us a mail:</strong> endhunger@gmail.com</span></div>
+      </li>
+      <li class="one_quarter">
+        <div class="block clear"><a href="#"><i class="fas fa-clock"></i></a> <span><strong> Mon. - Sat.:</strong> 08.00am - 18.00pm</span></div>
+      </li>
+      <li class="one_quarter">
+        <div class="block clear"><a href="#"><i class="fas fa-map-marker-alt"></i></a> <span><strong>Come visit us:</strong> Directions to <a href="#">our location</a></span></div>
+      </li>
+    </ul>
+  </section>
+</div>
+
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <section id="services">
+      <div class="sectiontitle">
+        <p class="nospace font-xs">A whole nation can eat form</p>
+        <h6 class="heading">the food we waste!</h6>
+      </div>
+      <ul class="nospace group grid-3">
+        <li class="one_third">
+          <article><a href="#"><i class="fas fa-spray-can"></i></a>
+            <h6 class="heading">Our mission</h6>
+            <p>Millions of people die due to lack of food and many suffer from serious diseases. Our mission is to proivide ood to these people.</p>
+          </article>
+        </li>
+        <li class="one_third">
+          <article><a href="#"><i class="fas fa-user-secret"></i></a>
+            <h6 class="heading">Take a Pledge</h6>
+            <p>Lets not waste food anymore! Take a pledge with us.</p>
+          </article>
+        </li>
+        <li class="one_third">
+          <article><a href="#"><i class="fas fa-couch"></i></a>
+            <h6 class="heading">Events</h6>
+            <p>Help us in the events we organize and take part in them.</p>
+          </article>
+        </li>
+        <li class="one_third">
+          <article><a href="#"><i class="fas fa-crow"></i></a>
+            <h6 class="heading">Latest News</h6>
+            <p>Latest news on sustainable development and its goals</p>
+          </article>
+        </li>
+        <li class="one_third">
+          <article><a href="#"><i class="fas fa-dolly-flatbed"></i></a>
+            <h6 class="heading">Donate Now</h6>
+            <p>Give today to help end hunger. <br> You can donate food or money for these people</p>
+          </article>
+        </li>
+        <li class="one_third">
+          <article><a href="#"><i class="fas fa-road"></i></a>
+            <h6 class="heading">Subscribe</h6>
+            <p>Subscribe to our news letter.</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+    
+    <div class="clear"></div>
+  </main>
+</div>
+
+<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');">
+  <section class="hoc container clear"> 
+    <div class="sectiontitle">
+      <h6 class="heading">Sustainable Development GOALS</h6>
+    </div>
+    <article id="points" class="group">
+      <div class="two_third first">
+        <h6 class="heading">What are the Sustainable Development Goals?</h6>
+        <p>The Sustainable Development Goals (SDGs), also known as the Global Goals, were adopted by all United Nations Member States in 2015 as a universal call to action to end poverty, protect the planet and ensure that all people enjoy peace and prosperity by 2030.</p>
+        <p>The 17 SDGs are integrated—that is, they recognize that action in one area will affect outcomes in others, and that development must balance social, economic and environmental sustainability.</p>
+        <ul class="nospace group">
+          <li><span>1</span> No poverty</li>
+          <li><span>2</span> Zero hunger</li>
+          <li><span>3</span> Good health and well-being</li>
+          <li><span>4</span> Quality education</li>
+          <li><span>5</span> Gender equality</li>
+          <li><span>6</span> Clean water and sanitaion</li>
+          <li><span>7</span> Affordable and clean energy</li>
+          <li><span>8</span> Decent work and economic growth</li>
+          <li><span>9</span> Industry innovation and infrastructure</li>
+          <li><span>10</span> Reduced inequality</li>
+          <li><span>11</span> Sustainable cities and commuunities</li>
+          <li><span>12</span> Responsible consumption and production</li>
+          <li><span>13</span> Climate action</li>
+          <li><span>14</span> Life below water</li>
+          <li><span>15</span> Life on land</li>
+          <li><span>16</span> Peace, justice and strong institutions</li>
+          <li><span>17</span> Partnership for the goals</li>
+        </ul>
+      </div>
+      <div class="one_third last"><a class="imgover" href="#"><img src="images/demo/348x394.png" alt=""></a></div>
+    </article>
+  </section>
+</div>
+
+<div class="wrapper row2">
+  <section class="hoc container clear"> 
+    <div class="sectiontitle">
+      <h6 class="heading">Our events</h6>
+    </div>
+    <ul id="latest" class="nospace group sd-third">
+      <li class="one_third first">
+        <article>
+          <figure><img src="simplfeast.jpg" alt=""></a>
+            <figcaption>
+              <ul class="nospace meta clear">
+                <li><i class="fas fa-user"></i>Chennai</a></li>
+                <li>
+                  <time datetime="2045-04-06T08:15+00:00">04 Nov 2019</time>
+                </li>
+              </ul>
+              <h6 class="heading"><a href="events.html">Meal and packing delivery</a></h6>
+              <br>
+            </figcaption>
+          </figure>
+        </article>
+      </li>
+      <li class="one_third">
+        <article>
+          <figure><img src="thanksgivingg.jpg" alt=""></a>
+            <figcaption>
+              <ul class="nospace meta clear">
+                <li><i class="fas fa-user"></i>Bangalore</a></li>
+                <li>
+                  <time datetime="2045-04-05T08:15+00:00">05 Dec 2019</time>
+                </li>
+              </ul>
+              <h6 class="heading"><a href="events.html">Thanksgiving soup kitchen</a></h6>
+              <br>
+            </figcaption>
+          </figure>
+        </article>
+      </li>
+      <li class="one_third">
+        <article>
+          <figure><img src="cookin.jpg" alt=""></a>
+            <figcaption>
+              <ul class="nospace meta clear">
+                <li><i class="fas fa-user"></i>Mumbai</a></li>
+                <li>
+                  <time datetime="2045-04-04T08:15+00:00">11 Dec 2019</time>
+                </li>
+              </ul>
+              <h6 class="heading"><a href="events.html">Cooking workshop</a></h6>
+              <br>
+            </figcaption>
+          </figure>
+        </article>
+      </li>
+    </ul>
+  </section>
+</div>
+
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <div class="one_quarter first">
+      <h6 class="heading">Contact us</h6>
+      <p>#123 <br>abc street<br> vellore</p>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Connect with us</h6>
+      <ul class="nospace linklist">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Google+</a></li>
+        <li><a href="#">Snapchat</a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Subscribe</h6>
+      <p class="nospace btmspace-15">Write you name and email.</p>
+      <form id="myform" onsubmit="return validate()">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" ng-model="name" placeholder="Name" name="name1">
+          <input class="btmspace-15" type="text" ng-model="email" placeholder="Email" name="email1">
+          <h5>thank you {{name}}.</h5>
+          <button class="btn" type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    <div class="one_quarter last">
+      <h6 class="heading">News</h6>
+      <ul class="nospace linklist">
+        <li>
+          <article>
+            <h6 class="nospace font-x1"><a href="#">Event in Chennai</a></h6>
+            <time class="font-xs block btmspace-10" datetime="2045-04-06">Friday, 4<sup>th</sup> Nov 2019</time>
+            <p class="nospace">Meal and packing delivery event organized in Chennai</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h6 class="nospace font-x1"><a href="#">Donation by PM</a></h6>
+            <time class="font-xs block btmspace-10" datetime="2045-04-05">Thursday, 3<sup>th</sup> Nov 2019</time>
+            <p class="nospace">PM donated two million to charity </p>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <p class="fl_left">Copyright &copy; 2019 - All Rights Reserved - <a href="#">End Hunger</a></p>
+    <p class="fl_right">Charity No. 1234567</p>
+  </div>
+</div>
+</body>
+</html>
